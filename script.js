@@ -69,4 +69,23 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
 
     finalText.style.display = "block";
+
+});
+
+let count = 1;
+
+const countDisplay = document.getElementById("count");
+const plusBtn = document.getElementById("plus");
+const minusBtn = document.getElementById("minus");
+
+plusBtn.addEventListener("click", () => {
+  count++;
+  countDisplay.textContent = count;
+});
+
+minusBtn.addEventListener("click", () => {
+  if (count > 1) {
+    count--;
+    countDisplay.textContent = count;
+  }
 });
