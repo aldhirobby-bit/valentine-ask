@@ -89,3 +89,23 @@ minusBtn.addEventListener("click", () => {
     countDisplay.textContent = count;
   }
 });
+
+let step = 0;
+
+document.getElementById("letter-container").addEventListener("click", function () {
+
+    step++;
+
+    if (step === 1) {
+        document.getElementById("letter-content").style.display = "block";
+    }
+
+    else if (step === 2) {
+        document.getElementById("final-text").style.display = "block";
+    }
+
+    else if (step === 3) {
+        document.getElementById("chocolate-box").style.display = "block";
+    }
+
+});
