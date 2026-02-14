@@ -69,7 +69,8 @@ yesBtn.addEventListener("click", () => {
     buttons.style.display = "none";
 
     finalText.style.display = "block";
-
+    document.getElementById("chocolate-box").style.display = "block";
+    
 });
 
 let count = 1;
@@ -109,3 +110,4 @@ document.getElementById("letter-container").addEventListener("click", function (
     }
 
 });
+
